@@ -25,9 +25,6 @@ Table of Contents:
     box-sizing: border-box;
 }
 
-
-
-
 /*////////////////////////
     2. Typography
 ////////////////////////*/
@@ -37,61 +34,55 @@ body {
     color: #1C2B32;
     font-size: 9px;
     font-weight: 300;
-    max-width:1000px;
+    /*max-width:1000px;*/
 }
 
 h1, h2 {
     font-weight: 600;
     text-align: center;
-    font-size: 18px;
+    font-size: 29px;
     color: #1C2B32;
 }
 
-h3 {
-    font-size: 8px;
+h3,
+.testimonials-box {
+    font-size: 14px;
     font-weight: 400;
-    font-color: #1C2B32;
+    color: #1C2B32;
+
+}
+
+.testimonials-text {
+    font-style: italic;
 }
 
 .header-section h1 {
-    font-size: 65px;
+    font-size: 105px;
+    font-weight: 700;
     line-height: 1.5;
+}
+
+header ::placeholder {
+    padding: 22px;
+    font-size: 16px;
 }
 
 a,
 a:visited {
-    color: #1C2B32;
-    font-weight: 300;
-}
-
-input[type=text] {
-    background-color: transparent;
-    width: 190px;
-    height: 40px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    font-size: 9px;
-    border: 1px solid #1C2B32;
-}
-
-.header-text {
-    font-size: 8.6px;
-    line-height: 10px;
-}
-
-header ::placeholder {
-    padding: 18px;
-    font-size: 10px;
-}
-
-a {
     color: #899CA0;
-
+    font-weight: 300;
 }
 
 a:hover {
     text-decoration: none;
 }
+
+footer {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+}
+
 
 /*////////////////////////
     3. Areas
@@ -101,70 +92,163 @@ a:hover {
 /*///////////// 3.1 Header /////////////*/
 
 
-.header-section {
-    color: #1C2B32;
-    padding: 50px 0 190px 0;
-    text-align: center;
-    max-width: 1000px;
-    line-height: 1.6;
+header {
     background-image: url("../assets/images/mountains.jpg");
     background-size: cover;
-    /*background-position: top;*/
+    background-position: top;
 }
 
+.header-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 91px 0 328px 0;
+
+}
 .header-section button {
     background-color: #1C2B32;
     color: #FFFFFF;
-    font-size: 9px;
-    padding: 14px 20px;
-    border: 1px solid #1C2B32;
-    margin: -4px;
+    font-size: 16px;
+    padding: 21px 29px;
+    border: 0 solid #1C2B32;
+    margin: 0 -4px;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
 }
 
-.form {
-    margin: 22px;
+input[type=text] {
+    background-color: transparent;
+    width: 300px;
+    height: 60px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 2px solid #1C2B32;
 }
 
 
 
 /*///////////// 3.2 Testimonial /////////////*/
+
 main {
     max-width: 1000px;
-    margin: 35px auto;
-}
-
-.testimonial{
-    width: 600px;
-    border: 2px solid pink;
-    height: 130px;
-    border-radius: 5px;
-    margin: 40px;
+    margin: 0 auto;
 }
 
 .testimonial-section {
-    margin: 35px auto;
+    padding: 55px 0;
 }
+.testimonials-box {
+    position: relative;
+    background-color: #FFFFFF;
+    height: 220px;
+    border-radius: 10px;
+    margin: 58px 5px auto;
+    box-shadow: 0 0 10px #899CA0;
+    padding: 60px 60px 0 140px;
+    line-height: 20px;
+}
+
+form {
+    padding: 33px;
+    vertical-align: middle;
+}
+
+.testimonial-picture {
+    height: 44px;
+    width: 44px;
+    margin-inline: 0;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonials-text {
+    position: absolute;
+    padding-top: 20px;
+}
+
+.quote-icon {
+    position: absolute;
+    left: 90px;
+    top: 50px;
+    height: 30px;
+
+}
+
 
 /*///////////// 3.3 Support /////////////*/
 
 
 .callcenter {
     width: 100%;
-    border-radius: 5px;
+    margin-top: 60px;
+    border-radius: 10px;
 }
 
-/*.support {*/
-/*    position: relative;*/
 
-/*}*/
+.support-section button {
+    background-color: #1C2B32;
+    color: #FFFFFF;
+    font-size: 17px;
+    padding: 22px 25px;
+    border-radius: 50px;
+    border: none;
 
+}
 
+.support-section {
+    padding: 0;
+    padding-top: 4px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
 
+.support-team {
+    padding: 30px 0;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
 
+details {
+    font-size: 15px;
+    font-weight: 300;
+    color: #1C2B32;
+    line-height: 50px;
+
+}
+
+details:hover {
+cursor: pointer;
+}
+
+details > p {
+    border-radius: 10px;
+    background-color: #899CA0;
+    padding: 20px 20px;
+    margin: 0;
+    color: #FFFFFF;
+    width: 650px;
+    line-height: 25px;
+}
+
+.faq-section {
+    padding: 25px 0;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+        text-align: center;
+        margin: 0 auto;
+        background-color: #1C2B32;
+        padding: 30px 0 30px 0;
+    /*padding: 5px;*/
+        color: #FFFFFF;
+
+    }
+
+
+
+
